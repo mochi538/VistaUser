@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.comcss2?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    overflow: hidden;
+
+}
+/* Estilos del header */
+header{
+    background-color: rgb(240,240,240);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border: black 1px solid;
+}
+header h1{
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+
+}
+header div {
+    width: 30%;
+    margin:0 0 0 250px ;
+    
+}
+header div img{
+    width: 50px;
+    height: 50px;   
+}
+/* Fin stylos del header */
+
+/* Main */
+/* Datos Usuario */
+
+.contenedor-principal{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    border: black 1px solid;
+    
+}
+/* Izquerda */
+.contenedor-left{
+    padding: 50px 0 0px 90px;
+    border: black 1px solid;
+    width: 50%;
+    font-size: 25px;
+}
+/* Derecha */
+.contenedor-right{
+    padding: 50px 0px 0px 0px;
+    border: black 1px solid;
+    width: 50%;
+    font-size: 25px;
+    
+}
+
+.container-dato{
+    margin: 0px 0 10px 0px;
+
+    display: flex;
+    width: 100%;
+}
+.container-dato label{
+    width: 50%;
+    margin: 0;
+    text-align: right;
+}
+
+.container-dato p{
+    padding: 0 0 0 5%;
+    text-align: left;
+}
+
+
+/* Fin datos de usuario */
+
+
+
+/* Fin main */
+
+
+
+
+
+.contenedor-opciones{
+    display: flex;
+}
+.contenedor-opciones2{
+    width: 20%;
+    height: 5vh;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    background-color: rgb(180, 180, 180);
+    width: 12%;
+    height: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+
+}
+
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: #ffff;
+    width: 15px;
+    height:15px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+.inputCheck:checked + .button{
+    background-color: rgb(21, 173, 59);
+
+}
+
+.inputCheck:checked + .button::before{
+    transform: translateX(18px);
+
+}
+
+.inputCheck{
+    display: none;
+} 
