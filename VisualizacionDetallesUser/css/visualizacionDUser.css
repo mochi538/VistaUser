@@ -47,43 +47,79 @@ header div img{
     height: 250px;
     display: flex;
     border: black 1px solid;
-    
+
 }
 /* Izquerda */
 .contenedor-left{
-    padding: 50px 0 0px 90px;
-    border: black 1px solid;
+    padding: 40px 0px 0px 0px;
+    /* border: black 1px solid; */
     width: 50%;
     font-size: 25px;
 }
 /* Derecha */
 .contenedor-right{
-    padding: 50px 0px 0px 0px;
-    border: black 1px solid;
+    padding: 40px 0px 0px 0px;
+    /* border: black 1px solid; */
     width: 50%;
     font-size: 25px;
     
 }
-
 .container-dato{
-    margin: 0px 0 10px 0px;
-
+    margin: 0px 0 20px 0px;
     display: flex;
     width: 100%;
+    
 }
 .container-dato label{
+    width: 30%;
+    text-align: right;
+    
+
+}
+.container-dato p{
+    width: 60%;
+
+    padding-left: 5%;
+    text-align: left;
+}
+/* Fin datos de usuario */
+
+/* Opción de tratamientos */
+.contenedor-principal2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: rgb(172, 164, 164);
+}
+.container-contenedor-left{
+    border: rgb(0, 17, 248) 1px solid;
     width: 50%;
-    margin: 0;
+    padding: 40px 0 0px 20px;
+
+
+}
+.container-contenedor-right{
+    border: rgb(255, 0, 0) 1px solid;
+    display: flex;
+    width: 50%;
+    padding: 40px 0 0px 20px;
+
+
+}
+.contenedor-opciones{
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+.type{
+    width: 30%;
+    height: 35px;
+    font-size: 25px;
     text-align: right;
 }
 
-.container-dato p{
-    padding: 0 0 0 5%;
-    text-align: left;
-}
+/* Fin de Opción de tratamientos */
 
-
-/* Fin datos de usuario */
 
 
 
@@ -93,24 +129,21 @@ header div img{
 
 
 
-.contenedor-opciones{
-    display: flex;
-}
+
 .contenedor-opciones2{
     width: 20%;
     height: 5vh;
-    background-color: #ffff;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 5px 0 0 10px;
+    
+
 }
 .button{
     background-color: rgb(180, 180, 180);
-    width: 12%;
+    width: 25%;
     height: 50%;
     border-radius: 20px;
     cursor: pointer;
-    position: relative;
     transition: 0.2s;
 
 }
